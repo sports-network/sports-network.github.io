@@ -1,0 +1,7 @@
+gmail: sportsnetwork.init@gmail.com
+pwd: kalapani@1
+
+github: sports-network
+pwd: kalapani@1
+
+web: sports-network.github.io
