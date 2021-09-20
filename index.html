@@ -4,12 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://css.gg/user.css' rel='stylesheet'>
 <link rel="stylesheet" href="style.css">
-<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
 
-  <div class="topbar">
-    <div>Teams</div>
+  <!-- <div class="topbar">
+    <div class="topbar-content">
+      <a id="yourteams" class="active">Invite Friends</a>
+    </div>
+    <div class="topbar-content">
+      <a id="yourteams" class="active">Your Teams</a>
+    </div>
     <div class="userdropdown">
       <button>
         <i class="gg-user userdropbtn"></i>
@@ -19,6 +23,42 @@
         <a href="#">Sign up</a>
       </div>
     </div>
+  </div> -->
+
+  <div class="topbar">
+    <div class="topbar-content">
+      <button onclick="document.getElementById('login').style.display='block'">Login</button>
+    </div>
+  </div>
+
+  <div id="login" class="loginform">
+    <form class="loginform-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="login-container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+
+        <button type="submit">Login</button>
+
+        <p class="signup">Not a user? <a href="signup.html">Sign up</a>.</p>
+        
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="forgotpassword.html">Forgot password?</a></span>
+      </div>
+    </form>
   </div>
 
   <div class="topnav">
@@ -49,26 +89,14 @@
 
 
 <script>
-var user = document.getElementById('user');
+
+var login = document.getElementById('login');
 window.onclick = function(event) {
-    if (event.target == user) {
-        user.style.display = "none";
+    if (event.target == login) {
+        login.style.display = "none";
     }
 }
 
-var signup = document.getElementById('signup');
-window.onclick = function(event) {
-    if (event.target == signup) {
-        signup.style.display = "none";
-    }
-}
-
-var signin = document.getElementById('signin');
-window.onclick = function(event) {
-    if (event.target == signin) {
-        signin.style.display = "none";
-    }
-}
 </script>
 
 </body>
