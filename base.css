@@ -1,48 +1,9 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-
-* {
+body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.userdropbtn {
-  border: none;
-  cursor: pointer;
-}
-  
-  /* The container <div> - needed to position the dropdown content */
-.userdropdown {
-    position: relative;
-    display: inline-block;
-}
 
-/* Dropdown Content (Hidden by Default) */
-.userdropdown-content {
-    display: none;
-    position: absolute;
-    right: 0pt;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.userdropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-/* Change color of dropdown links on hover */
-.userdropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.userdropdown:hover .userdropdown-content {
-    display: block;
-}
-
+/* TOP BAR */
 .topbar {
   float: right;
   padding-right: 50pt;
@@ -54,6 +15,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 
+/* NAVIGATION BAR */
 .topnav {
   padding-top: 70pt;
   height:50px;
@@ -63,11 +25,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .topnav-content {
-  text-align:center;
-	font-family: 'Didact Gothic';
-  /* float:center; */
 	display: inline-block;
-  clear:left;
   list-style:none;
   margin:0;
   padding:0;
@@ -75,12 +33,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .topnav-content > li {
-  display:block;
   float:left;
-  list-style:none;
-  margin:0;
-  padding:0;
-  position:relative;
 }
 
 .topnav-content > li > a {
@@ -91,14 +44,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
   text-decoration: none;
 }
 
+
+/* HIGHLIGHT CURRENTLY SELECTED */
 #link {
-  /*color:  #74725F;
-  */
   color: #000000;
   font-weight: bold;
 }
 
-/* Full-width input fields */
+
+/* LOGIN POP-UP */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -111,7 +65,6 @@ input[type=text], input[type=password] {
 /* Set a style for all buttons */
 button {
   background-color: rgb(243, 142, 112);
-  /* color: white; */
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -127,8 +80,6 @@ button:hover {
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  /* background-color: #f44336; */
-  /* background-color: #f1f1f1; */
   margin-left: 16px;
 }
 
